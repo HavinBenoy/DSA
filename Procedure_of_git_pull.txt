@@ -1,0 +1,10 @@
+ (1).   run 'git status' and see which all files are tracked and untracked.
+ (2).   if you want any of the local changes , keep that files somewhere else for temporerly. Else move to step 3
+ (2.5). if you have tracked files then we need to change them from modified to unmodified so that git pull can replace it from the github. For that 
+        run 'git restore .'
+ (3).   Now we are deleting all the local untracked files from the git .
+        run 'git clean -fdn' to see which all the files that will be removed from the git
+        run 'git clean -fd' to remove them from the git. (Note: ignored files are not affected)
+ (4).   run 'git pull origin main'
+ (5).   Finaly verify by 'git status'
+   
